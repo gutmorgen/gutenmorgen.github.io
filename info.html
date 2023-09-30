@@ -14,4 +14,139 @@
 │                                                         │
 │  🐰 Next steps:                                         │
 │     npm install                                         │
-│     npm start                                           │
+│     npm start   
+🦋  Add Integration  cloudflare-pages
+│
+◇  👻  Ready?  Add cloudflare-pages to your app?
+│
+│  🐬 Modify
+│     - README.md
+│     - .gitignore
+│     - package.json
+│
+│  🌟 Create
+│     - .node-version
+│     - public/_headers
+│     - public/_redirects
+│     - src/entry.cloudflare-pages.tsx
+│     - adapters/cloudflare-pages/vite.config.ts
+│
+│  💾 Install npm dependency:
+│     - wrangler ^3.0.0
+│
+│  📜 New npm script:
+│     - npm run build.server
+│     - npm run deploy
+│     - npm run serve
+│
+◇  Ready to apply the cloudflare-pages updates to your app?
+│  Yes looks good, finish update!
+│
+◇  App updated
+│
+◇  New scripts added ──────╮
+│                          │
+│  - npm run build.server  │
+│  - npm run deploy        │
+│  - npm run serve         │
+│                          │
+├──────────────────────────╯
+│
+◇  🟣  Next Steps  ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  Now you can build and deploy to Cloudflare Pages with:                │
+
+      ............
+    .::: :--------:.
+   .::::  .:-------:.
+  .:::::.   .:-------.
+  ::::::.     .:------.
+ ::::::.        :-----:
+ ::::::.       .:-----.
+  :::::::.     .-----.
+   ::::::::..   ---:.
+    .:::::::::. :-:.
+     ..::::::::::::
+             ...::::
+     
+
+
+npm run build.types
+npm run build.client
+npm run build.server
+npm run lint
+
+
+> build.client
+> vite build
+
+vite v4.4.7 building for production...
+✓ 95 modules transformed.
+dist/build/q-2e9da536.webp   4.52 kB
+dist/build/q-aed62408.webp   8.98 kB
+dist/build/q-0c26d3ee.webp  13.19 kB
+dist/build/q-b17755ae.webp  18.90 kB
+dist/build/q-df840595.webp  29.88 kB
+dist/q-manifest.json        30.97 kB │ gzip:  5.42 kB
+dist/build/q-027f67b0.css    4.00 kB │ gzip:  1.28 kB
+dist/build/q-4d8d7cc7.js     0.13 kB │ gzip:  0.12 kB
+dist/build/q-510e6030.js     0.13 kB │ gzip:  0.13 kB
+dist/build/q-4df21256.js     0.21 kB │ gzip:  0.16 kB
+dist/build/q-a4df5019.js     0.24 kB │ gzip:  0.19 kB
+dist/build/q-ba11f132.js     0.26 kB │ gzip:  0.21 kB
+dist/build/q-736a16f8.js     0.31 kB │ gzip:  0.24 kB
+dist/build/q-e7de01e6.js     0.38 kB │ gzip:  0.29 kB
+dist/build/q-4a9895f9.js     0.41 kB │ gzip:  0.29 kB
+dist/build/q-db5adbce.js     0.47 kB │ gzip:  0.32 kB
+dist/build/q-1a570ece.js     0.54 kB │ gzip:  0.32 kB
+dist/build/q-8bf241cd.js     0.55 kB │ gzip:  0.35 kB
+dist/build/q-22949cf9.js     0.70 kB │ gzip:  0.44 kB
+dist/build/q-06fdff71.js     0.75 kB │ gzip:  0.46 kB
+dist/build/q-2cc3397c.js     0.76 kB │ gzip:  0.41 kB
+dist/build/q-c644730b.js     0.79 kB │ gzip:  0.52 kB
+dist/build/q-ecd06dc6.js     0.89 kB │ gzip:  0.56 kB
+dist/build/q-0794176c.js     0.96 kB │ gzip:  0.51 kB
+dist/build/q-edbfc8dd.js     1.03 kB │ gzip:  0.65 kB
+dist/build/q-56387cd8.js     1.14 kB │ gzip:  0.68 kB
+dist/build/q-ed88bd64.js     1.15 kB │ gzip:  0.64 kB
+dist/build/q-6ab33a85.js     1.16 kB │ gzip:  0.58 kB
+dist/build/q-866dcf95.js     1.20 kB │ gzip:  0.62 kB
+dist/build/q-305cd6ce.js     1.50 kB │ gzip:  0.72 kB
+dist/build/q-d245feb0.js     1.67 kB │ gzip:  0.89 kB
+dist/build/q-663033b0.js     2.29 kB │ gzip:  1.11 kB
+dist/service-worker.js       2.54 kB │ gzip:  1.21 kB
+dist/build/q-7733db82.js     2.69 kB │ gzip:  1.24 kB
+dist/build/q-83fda939.js     2.83 kB │ gzip:  0.95 kB
+dist/build/q-f71e4c15.js     3.82 kB │ gzip:  1.83 kB
+dist/build/q-3ed656cd.js     5.40 kB │ gzip:  2.15 kB
+dist/build/q-647b5082.js     5.85 kB │ gzip:  2.46 kB
+dist/build/q-809e5871.js     9.33 kB │ gzip:  4.36 kB
+dist/build/q-1d628a68.js    49.32 kB │ gzip: 20.07 kB
+✓ built in 6.56s
+
+✓ Built client modules
+
+
+> build.server
+> vite build -c adapters/cloudflare-pages/vite.config.ts
+
+vite v4.4.7 building SSR bundle for production...
+transforming...
+✓ 38 modules transformed.
+rendering chunks...
+server/build/q-81990f0e.css                  4.00 kB
+server/entry.ssr.js                          0.12 kB
+server/@qwik-city-plan.js                    0.22 kB
+server/entry.cloudflare-pages.js            19.58 kB
+server/assets/entry.ssr-c58dd7bb.js         46.97 kB
+server/assets/@qwik-city-plan-7d860b45.js  156.18 kB
+
+Starting Qwik City SSG...
+
+SSG results
+- Duration: 44.7 ms
+
+✓ built in 15.37s
+✓ Built server (ssr) modules
+✓ Type checked
+✓ Lint checked                                        │
